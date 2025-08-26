@@ -18,7 +18,7 @@
   "hero": {
     "headline": "C.V. Chandramouli",
     "subtext": "Advertising Consultants",
-    "image": "/images/hero-image.jpg",
+    "image": "/images/hero-image.svg",
     "buttons": [
       { "text": "Get Quote", "href": "#contact", "type": "primary" },
       { "text": "WhatsApp", "href": "https://wa.me/919940711173", "type": "secondary" }
@@ -31,13 +31,13 @@
         "name": "C.V. Chandramouli",
         "title": "Founder",
         "description": "Founder and pioneer in cinema advertising.",
-        "image": "/images/chandramouli.jpg"
+        "image": "/images/chandramouli.svg"
       },
       {
         "name": "R.C. Vijay",
         "title": "Director",
         "description": "MCA, MBA (Advertising). Certified in Technical Writing, Photoshop, and Digital Marketing.",
-        "image": "/images/vijay.jpg"
+        "image": "/images/vijay.svg"
       }
     ]
   },
@@ -57,14 +57,14 @@
   "clients": {
     "title": "Our Clients",
     "logos": [
-      { "name": "Client 1", "image": "/images/client-1.png" },
-      { "name": "Client 2", "image": "/images/client-2.png" },
-      { "name": "Client 3", "image": "/images/client-3.png" },
-      { "name": "Client 4", "image": "/images/client-4.png" },
-      { "name": "Client 5", "image": "/images/client-5.png" },
-      { "name": "Client 6", "image": "/images/client-6.png" },
-      { "name": "Client 7", "image": "/images/client-7.png" },
-      { "name": "Client 8", "image": "/images/client-8.png" }
+      { "name": "Client 1", "image": "/images/client-1.svg" },
+      { "name": "Client 2", "image": "/images/client-2.svg" },
+      { "name": "Client 3", "image": "/images/client-3.svg" },
+      { "name": "Client 4", "image": "/images/client-4.svg" },
+      { "name": "Client 5", "image": "/images/client-5.svg" },
+      { "name": "Client 6", "image": "/images/client-6.svg" },
+      { "name": "Client 7", "image": "/images/client-7.svg" },
+      { "name": "Client 8", "image": "/images/client-8.svg" }
     ]
   },
   "subscribe": {
