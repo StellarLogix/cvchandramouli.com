@@ -1,0 +1,97 @@
+{
+  "company": {
+    "name": "C.V. Chandramouli",
+    "tagline": "Advertising Consultants",
+    "website": "cvchandramouli.com",
+    "phone": "+91 99407 11173",
+    "email": "rcvijay@yahoo.co.in",
+    "address": "Srinivasa Ragavan Street, R.S. Puram, Coimbatore, Tamil Nadu, India",
+    "hours": "Open today: 06:00 am – 11:00 pm",
+    "whatsappLink": "https://wa.me/919940711173"
+  },
+  "navigation": [
+    { "label": "About", "href": "#about" },
+    { "label": "Services", "href": "#services" },
+    { "label": "Clients", "href": "#clients" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "headline": "C.V. Chandramouli",
+    "subtext": "Advertising Consultants",
+    "image": "/images/hero-image.jpg",
+    "buttons": [
+      { "text": "Get Quote", "href": "#contact", "type": "primary" },
+      { "text": "WhatsApp", "href": "https://wa.me/919940711173", "type": "secondary" }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "profiles": [
+      {
+        "name": "C.V. Chandramouli",
+        "title": "Founder",
+        "description": "Founder and pioneer in cinema advertising.",
+        "image": "/images/chandramouli.jpg"
+      },
+      {
+        "name": "R.C. Vijay",
+        "title": "Director",
+        "description": "MCA, MBA (Advertising). Certified in Technical Writing, Photoshop, and Digital Marketing.",
+        "image": "/images/vijay.jpg"
+      }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "Print Advertising",
+        "description": "Creating impactful print campaigns that capture attention and drive results. From concept to execution, we deliver compelling visual stories."
+      },
+      {
+        "title": "Digital Marketing",
+        "description": "Comprehensive digital strategies including social media marketing, SEO, and online advertising to boost your brand's digital presence."
+      }
+    ]
+  },
+  "clients": {
+    "title": "Our Clients",
+    "logos": [
+      { "name": "Client 1", "image": "/images/client-1.png" },
+      { "name": "Client 2", "image": "/images/client-2.png" },
+      { "name": "Client 3", "image": "/images/client-3.png" },
+      { "name": "Client 4", "image": "/images/client-4.png" },
+      { "name": "Client 5", "image": "/images/client-5.png" },
+      { "name": "Client 6", "image": "/images/client-6.png" },
+      { "name": "Client 7", "image": "/images/client-7.png" },
+      { "name": "Client 8", "image": "/images/client-8.png" }
+    ]
+  },
+  "subscribe": {
+    "title": "Stay Updated",
+    "subtitle": "Subscribe to our newsletter for the latest advertising trends and insights.",
+    "placeholder": "Enter your email address",
+    "buttonText": "Sign Up",
+    "endpoint": "https://example.com/subscribe"
+  },
+  "contact": {
+    "title": "Contact Us to Get Started",
+    "subtitle": "Ready to elevate your brand? Get in touch with us today.",
+    "form": {
+      "action": "https://example.com/contact",
+      "fields": [
+        { "name": "name", "label": "Name", "type": "text", "required": true },
+        { "name": "email", "label": "Email", "type": "email", "required": true },
+        { "name": "message", "label": "Message", "type": "textarea", "required": true }
+      ],
+      "submitText": "Send Message"
+    },
+    "info": {
+      "directionsLink": "https://maps.google.com/?q=Srinivasa+Ragavan+Street+RS+Puram+Coimbatore"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 C.V. Chandramouli — All Rights Reserved.",
+    "poweredBy": "Powered by cvchandramouli.com"
+  }
+}
