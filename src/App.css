@@ -310,7 +310,7 @@ h6 {
   text-align: center;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border: 1px solid rgba(203, 178, 106, 0.1);
+  border: 1px solid rgba(243, 156, 18, 0.1);
 }
 
 .profile-card:hover {
@@ -371,7 +371,7 @@ h6 {
   text-align: center;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border: 1px solid rgba(203, 178, 106, 0.1);
+  border: 1px solid rgba(243, 156, 18, 0.1);
 }
 
 .service-card:hover {
@@ -536,7 +536,7 @@ h6 {
   background: #fafbfc;
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid rgba(203, 178, 106, 0.1);
+  border: 1px solid rgba(243, 156, 18, 0.1);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
 }
 
