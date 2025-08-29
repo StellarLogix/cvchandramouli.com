@@ -38,7 +38,9 @@ h6 {
 
 /* Buttons */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 12px 24px;
   border: none;
   border-radius: 5px;
@@ -87,6 +89,22 @@ h6 {
 
 .btn-full {
   width: 100%;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.whatsapp-icon {
+  flex-shrink: 0;
+}
+
+.whatsapp-btn:hover .whatsapp-icon {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 
 /* Header */

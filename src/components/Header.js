@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import content from '../content.json';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -23,16 +22,23 @@ const Header = () => {
     }
   };
 
+  const navigation = [
+    { label: "About", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Clients", href: "#clients" },
+    { label: "Contact", href: "#contact" }
+  ];
+
   return (
     <header className={`header ${isSticky ? 'header-sticky' : ''}`}>
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <h2>{content.company.name}</h2>
+            <h2>C.V. Chandramouli</h2>
           </div>
           
           <nav className="nav">
-            {content.navigation.map((item, index) => (
+            {navigation.map((item, index) => (
               <a
                 key={index}
                 href={item.href}

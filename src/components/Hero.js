@@ -1,5 +1,5 @@
 import React from 'react';
-import content from '../content.json';
+import WhatsAppIcon from './WhatsAppIcon';
 
 const Hero = () => {
   const handleSmoothScroll = (e, href) => {
@@ -19,26 +19,31 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-headline">{content.hero.headline}</h1>
-            <p className="hero-subtext">{content.hero.subtext}</p>
+            <h1 className="hero-headline">C.V. Chandramouli</h1>
+            <p className="hero-subtext">Advertising Consultants</p>
             
             <div className="hero-buttons">
-              {content.hero.buttons.map((button, index) => (
-                <a
-                  key={index}
-                  href={button.href}
-                  className={`btn ${button.type === 'primary' ? 'btn-primary' : 'btn-secondary'}`}
-                  onClick={(e) => handleSmoothScroll(e, button.href)}
-                >
-                  {button.text}
-                </a>
-              ))}
+              <a
+                href="#contact"
+                className="btn btn-primary"
+                onClick={(e) => handleSmoothScroll(e, '#contact')}
+              >
+                Get Quote
+              </a>
+              <a
+                href="https://wa.me/919940711173"
+                className="btn btn-secondary whatsapp-btn"
+                onClick={(e) => handleSmoothScroll(e, 'https://wa.me/919940711173')}
+              >
+                <WhatsAppIcon size={20} className="whatsapp-icon" />
+                WhatsApp
+              </a>
             </div>
           </div>
           
           <div className="hero-image">
             <img
-              src={process.env.PUBLIC_URL + content.hero.image}
+              src={process.env.PUBLIC_URL + "/images/hero-image.png"}
               alt="C.V. Chandramouli Advertising"
               className="hero-img"
             />
