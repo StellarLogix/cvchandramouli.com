@@ -184,11 +184,8 @@ For technical issues or customization help, contact the development team or refe
 
 ---
 
-**Website**: cvchandramouli.com  
+**Website**: cvchandramouli.com
 **Built with**: React + GitHub Pages
-<<<<<<< HEAD
-=======
-# cvchandramouli.com
 
 This repository was initialized by Builder.io.
 
