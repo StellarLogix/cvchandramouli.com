@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # C.V. Chandramouli - Advertising Consultants
 
 A professional single-page landing site for C.V. Chandramouli advertising agency, built with React and optimized for GitHub Pages deployment.
@@ -182,3 +183,12 @@ For technical issues or customization help, contact the development team or refe
 
 **Website**: cvchandramouli.com  
 **Built with**: React + GitHub Pages
+=======
+# cvchandramouli.com
+
+This repository was initialized by Builder.io.
+
+## Getting Started
+
+Welcome to your new repository! You can now start building your project.
+>>>>>>> refs/remotes/origin/main
