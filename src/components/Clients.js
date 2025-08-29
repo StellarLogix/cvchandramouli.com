@@ -1,6 +1,5 @@
 import React from 'react';
 import content from '../content.json';
-import { getImagePath } from '../utils/imagePath';
 
 const Clients = () => {
   return (
@@ -12,7 +11,7 @@ const Clients = () => {
           {content.clients.logos.map((client, index) => (
             <div key={index} className="client-logo">
               <img
-                src={getImagePath(client.image)}
+                src={process.env.PUBLIC_URL + client.image}
                 alt={client.name}
                 className="client-img"
               />

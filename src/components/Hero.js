@@ -1,6 +1,5 @@
 import React from 'react';
 import content from '../content.json';
-import { getImagePath } from '../utils/imagePath';
 
 const Hero = () => {
   const handleSmoothScroll = (e, href) => {
@@ -39,7 +38,7 @@ const Hero = () => {
           
           <div className="hero-image">
             <img
-              src={getImagePath(content.hero.image)}
+              src={process.env.PUBLIC_URL + content.hero.image}
               alt="C.V. Chandramouli Advertising"
               className="hero-img"
             />

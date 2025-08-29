@@ -1,6 +1,5 @@
 import React from 'react';
 import content from '../content.json';
-import { getImagePath } from '../utils/imagePath';
 
 const About = () => {
   return (
@@ -13,7 +12,7 @@ const About = () => {
             <div key={index} className="profile-card">
               <div className="profile-image">
                 <img
-                  src={getImagePath(profile.image)}
+                  src={process.env.PUBLIC_URL + profile.image}
                   alt={profile.name}
                   className="profile-img"
                 />
