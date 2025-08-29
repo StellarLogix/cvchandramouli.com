@@ -18,7 +18,7 @@ const Hero = () => {
     <section className="hero">
       <div className="container">
         <div className="hero-content">
-          <div className="hero-text-center">
+          <div className="hero-text">
             <h1 className="hero-headline">Transform Your Brand with Creative Excellence</h1>
             <p className="hero-subtext">Professional advertising solutions that captivate audiences and drive results. From traditional print campaigns to cutting-edge digital marketing strategies, we bring your vision to life with decades of industry expertise.</p>
 
