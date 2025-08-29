@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +21,12 @@ const Header = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
+    // Close mobile menu when a link is clicked
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const navigation = [
@@ -34,10 +41,23 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <h2>C.V. Chandramouli</h2>
+            <img
+              src={process.env.PUBLIC_URL + "/images/hero-image.png"}
+              alt="C.V. Chandramouli"
+              className="logo-img"
+            />
+            <h2>CV Chandramouli Advertising</h2>
           </div>
-          
-          <nav className="nav">
+
+          <button
+            className="mobile-menu-toggle"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
+            {isMobileMenuOpen ? '✕' : '☰'}
+          </button>
+
+          <nav className={`nav ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
             {navigation.map((item, index) => (
               <a
                 key={index}
@@ -48,8 +68,15 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
+            <a
+              href="#contact"
+              className="btn btn-primary mobile-cta"
+              onClick={(e) => handleSmoothScroll(e, '#contact')}
+            >
+              Get Quote
+            </a>
           </nav>
-          
+
           <a
             href="#contact"
             className="btn btn-primary"

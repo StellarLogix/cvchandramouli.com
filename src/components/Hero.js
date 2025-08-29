@@ -19,9 +19,9 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-headline">C.V. Chandramouli</h1>
-            <p className="hero-subtext">Advertising Consultants</p>
-            
+            <h1 className="hero-headline">Transform Your Brand with Creative Excellence</h1>
+            <p className="hero-subtext">Professional advertising solutions that captivate audiences and drive results. From traditional print campaigns to cutting-edge digital marketing strategies, we bring your vision to life with decades of industry expertise.</p>
+
             <div className="hero-buttons">
               <a
                 href="#contact"
@@ -39,14 +39,6 @@ const Hero = () => {
                 WhatsApp
               </a>
             </div>
-          </div>
-          
-          <div className="hero-image">
-            <img
-              src={process.env.PUBLIC_URL + "/images/hero-image.png"}
-              alt="C.V. Chandramouli Advertising"
-              className="hero-img"
-            />
           </div>
         </div>
       </div>
