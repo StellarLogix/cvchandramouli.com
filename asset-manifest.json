@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.a51dcd0b.css",
-    "main.js": "/static/js/main.fcdbcc45.js",
-    "index.html": "/index.html",
-    "main.a51dcd0b.css.map": "/static/css/main.a51dcd0b.css.map",
-    "main.fcdbcc45.js.map": "/static/js/main.fcdbcc45.js.map"
+    "main.css": "https://stellarlogix.github.io/cvchandramouli.com/static/css/main.a51dcd0b.css",
+    "main.js": "https://stellarlogix.github.io/cvchandramouli.com/static/js/main.07c898cb.js",
+    "index.html": "https://stellarlogix.github.io/cvchandramouli.com/index.html",
+    "main.a51dcd0b.css.map": "https://stellarlogix.github.io/cvchandramouli.com/static/css/main.a51dcd0b.css.map",
+    "main.07c898cb.js.map": "https://stellarlogix.github.io/cvchandramouli.com/static/js/main.07c898cb.js.map"
   },
   "entrypoints": [
     "static/css/main.a51dcd0b.css",
-    "static/js/main.fcdbcc45.js"
+    "static/js/main.07c898cb.js"
   ]
 }
