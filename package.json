@@ -11,7 +11,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "deploy:github": "PUBLIC_URL=https://stellarlogix.github.io/cvchandramouli.com npm run build && gh-pages -d build"
+    "deploy:github": "cross-env PUBLIC_URL=https://stellarlogix.github.io/cvchandramouli.com npm run build && gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
