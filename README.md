@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
 # C.V. Chandramouli - Advertising Consultants
 
 A professional single-page landing site for C.V. Chandramouli advertising agency, built with React and optimized for GitHub Pages deployment.
@@ -99,40 +103,33 @@ Replace the placeholder images in `public/images/` with your actual images:
 
 ## 🌐 GitHub Pages Deployment
 
-### First-time Setup
-
-1. **Update package.json**: Replace the homepage URL with your repository:
-
-   ```json
-   "homepage": "https://yourusername.github.io/your-repository-name"
-   ```
-
-2. **Install gh-pages** (if not already installed):
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
 ### Deploy Steps
 
-1. **Build and Deploy**:
-
+1. **Deploy to GitHub Pages**:
    ```bash
-   npm run deploy
+   npm run deploy:github
    ```
 
-2. **Enable GitHub Pages**:
+   Or for custom URLs:
+   ```bash
+   cross-env PUBLIC_URL=https://yourusername.github.io/your-repo npm run build && gh-pages -d build
+   ```
+
+2. **Enable GitHub Pages** (first time only):
    - Go to your repository on GitHub
    - Navigate to Settings → Pages
    - Select "gh-pages" branch as source
-   - Your site will be available at the homepage URL
+   - Your site will be available at https://stellarlogix.github.io/cvchandramouli.com
 
-### Automatic Deployment
+### How It Works
 
-Every time you run `npm run deploy`, it will:
+The `deploy:github` script:
+1. Sets `PUBLIC_URL` environment variable for correct asset paths
+2. Builds the production version with proper paths
+3. Pushes the build to the `gh-pages` branch
+4. Updates your live site
 
-1. Build the production version
-2. Push the build to the `gh-pages` branch
-3. Update your live site
+**No need to modify package.json** - the homepage URL is set via environment variable during build!
 
 ## 🎨 Customizing Styles
 
@@ -163,7 +160,8 @@ The site is fully responsive with breakpoints at:
 - `npm run dev` - Start development server
 - `npm start` - Start development server (alternative)
 - `npm run build` - Build for production
-- `npm run deploy` - Deploy to GitHub Pages
+- `npm run deploy:github` - Deploy to GitHub Pages with correct URL
+- `npm run deploy` - Deploy to GitHub Pages (requires homepage in package.json)
 - `npm test` - Run tests
 
 ## 🔗 Contact Integration
@@ -186,5 +184,14 @@ For technical issues or customization help, contact the development team or refe
 
 ---
 
-**Website**: cvchandramouli.com  
+**Website**: cvchandramouli.com
 **Built with**: React + GitHub Pages
+
+This repository was initialized by Builder.io.
+
+## Getting Started
+
+Welcome to your new repository! You can now start building your project.
+>>>>>>> refs/remotes/origin/main
+=======
+>>>>>>> refs/remotes/origin/main

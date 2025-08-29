@@ -10,9 +10,9 @@ const Clients = () => {
         <div className="clients-grid">
           {content.clients.logos.map((client, index) => (
             <div key={index} className="client-logo">
-              <img 
-                src={client.image} 
-                alt={client.name} 
+              <img
+                src={process.env.PUBLIC_URL + client.image}
+                alt={client.name}
                 className="client-img"
               />
             </div>

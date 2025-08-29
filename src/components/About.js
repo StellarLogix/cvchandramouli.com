@@ -11,9 +11,9 @@ const About = () => {
           {content.about.profiles.map((profile, index) => (
             <div key={index} className="profile-card">
               <div className="profile-image">
-                <img 
-                  src={profile.image} 
-                  alt={profile.name} 
+                <img
+                  src={process.env.PUBLIC_URL + profile.image}
+                  alt={profile.name}
                   className="profile-img"
                 />
               </div>

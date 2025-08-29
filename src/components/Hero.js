@@ -37,9 +37,9 @@ const Hero = () => {
           </div>
           
           <div className="hero-image">
-            <img 
-              src={content.hero.image} 
-              alt="C.V. Chandramouli Advertising" 
+            <img
+              src={process.env.PUBLIC_URL + content.hero.image}
+              alt="C.V. Chandramouli Advertising"
               className="hero-img"
             />
           </div>
