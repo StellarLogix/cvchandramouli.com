@@ -18,7 +18,7 @@
   "hero": {
     "headline": "C.V. Chandramouli",
     "subtext": "Advertising Consultants",
-    "image": "/images/hero-image.svg",
+    "image": "/images/hero-image.png",
     "buttons": [
       { "text": "Get Quote", "href": "#contact", "type": "primary" },
       {
@@ -35,13 +35,13 @@
         "name": "C.V. Chandramouli",
         "title": "Founder",
         "description": "Founder and pioneer in cinema advertising.",
-        "image": "/images/chandramouli.svg"
+        "image": "/images/chandramouli.jpeg"
       },
       {
         "name": "R.C. Vijay",
         "title": "Director",
         "description": "MCA, MBA (Advertising). Certified in Technical Writing, Photoshop, and Digital Marketing.",
-        "image": "/images/vijay.svg"
+        "image": "/images/vijay.jpeg"
       }
     ]
   },

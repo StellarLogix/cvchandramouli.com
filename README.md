@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/main
 # C.V. Chandramouli - Advertising Consultants
 
 A professional single-page landing site for C.V. Chandramouli advertising agency, built with React and optimized for GitHub Pages deployment.
@@ -106,11 +102,13 @@ Replace the placeholder images in `public/images/` with your actual images:
 ### Deploy Steps
 
 1. **Deploy to GitHub Pages**:
+
    ```bash
    npm run deploy:github
    ```
 
    Or for custom URLs:
+
    ```bash
    cross-env PUBLIC_URL=https://yourusername.github.io/your-repo npm run build && gh-pages -d build
    ```
@@ -124,6 +122,7 @@ Replace the placeholder images in `public/images/` with your actual images:
 ### How It Works
 
 The `deploy:github` script:
+
 1. Sets `PUBLIC_URL` environment variable for correct asset paths
 2. Builds the production version with proper paths
 3. Pushes the build to the `gh-pages` branch
@@ -192,6 +191,3 @@ This repository was initialized by Builder.io.
 ## Getting Started
 
 Welcome to your new repository! You can now start building your project.
->>>>>>> refs/remotes/origin/main
-=======
->>>>>>> refs/remotes/origin/main
