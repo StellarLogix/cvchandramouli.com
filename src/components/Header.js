@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -9,16 +9,16 @@ const Header = () => {
       setIsSticky(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleSmoothScroll = (e, href) => {
     e.preventDefault();
-    if (href.startsWith('#')) {
+    if (href.startsWith("#")) {
       const element = document.querySelector(href);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
     // Close mobile menu when a link is clicked
@@ -33,11 +33,11 @@ const Header = () => {
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Clients", href: "#clients" },
-    { label: "Contact", href: "#contact" }
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
-    <header className={`header ${isSticky ? 'header-sticky' : ''}`}>
+    <header className={`header ${isSticky ? "header-sticky" : ""}`}>
       <div className="container">
         <div className="header-content">
           <div className="logo">
@@ -54,10 +54,10 @@ const Header = () => {
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >
-            {isMobileMenuOpen ? '✕' : '☰'}
+            {isMobileMenuOpen ? "✕" : "☰"}
           </button>
 
-          <nav className={`nav ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+          <nav className={`nav ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
             {navigation.map((item, index) => (
               <a
                 key={index}
@@ -68,22 +68,27 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
+            {/* Show Get Quote button only in mobile menu */}
+            {isMobileMenuOpen && (
+              <a
+                href="#contact"
+                className="btn btn-primary mobile-cta"
+                onClick={(e) => handleSmoothScroll(e, "#contact")}
+              >
+                Get Quote
+              </a>
+            )}
+          </nav>
+          {/* Show Get Quote button only on desktop */}
+          {!isMobileMenuOpen && (
             <a
               href="#contact"
-              className="btn btn-primary mobile-cta"
-              onClick={(e) => handleSmoothScroll(e, '#contact')}
+              className="btn btn-primary"
+              onClick={(e) => handleSmoothScroll(e, "#contact")}
             >
               Get Quote
             </a>
-          </nav>
-
-          <a
-            href="#contact"
-            className="btn btn-primary"
-            onClick={(e) => handleSmoothScroll(e, '#contact')}
-          >
-            Get Quote
-          </a>
+          )}
         </div>
       </div>
     </header>

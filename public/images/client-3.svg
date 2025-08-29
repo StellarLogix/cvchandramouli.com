@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" width="240" height="140">
-  <rect width="100%" height="100%" fill="#fff" />
-  <ellipse cx="56" cy="70" rx="44" ry="30" fill="#f0f0f0" stroke="#ddd" />
-  <text x="140" y="80" font-family="Arial" font-size="20" fill="#444">Client C</text>
-</svg>

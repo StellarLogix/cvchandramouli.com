@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" width="240" height="140">
-  <rect width="100%" height="100%" fill="#fff" />
-  <rect x="16" y="20" width="96" height="96" rx="12" fill="#CBB26A" />
-  <text x="110" y="80" font-family="Arial" font-size="20" fill="#444">Client A</text>
-</svg>
