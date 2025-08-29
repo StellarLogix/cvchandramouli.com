@@ -224,10 +224,16 @@ h6 {
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-text-center {
+  width: 100%;
 }
 
 .hero-headline {
@@ -251,15 +257,6 @@ h6 {
   justify-content: center;
 }
 
-.hero-image {
-  text-align: center;
-}
-
-.hero-img {
-  max-width: 100%;
-  height: 256px;
-  border-radius: 10px;
-}
 
 /* About Section */
 .about {
@@ -571,8 +568,6 @@ h6 {
   }
 
   .hero-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
     text-align: center;
   }
 
