@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://username.github.io/repository-name",
+  "homepage": "https://stellarlogix.github.io/cvchandramouli.com",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
