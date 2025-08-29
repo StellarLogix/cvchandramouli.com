@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import content from '../content.json';
+import WhatsAppIcon from './WhatsAppIcon';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +18,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder form submission
     console.log('Contact form submission:', formData);
     alert('Thank you for your message! We will get back to you soon. (This is a placeholder action)');
     setFormData({ name: '', email: '', message: '' });
@@ -27,37 +26,38 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2 className="section-title">{content.contact.title}</h2>
-        <p className="contact-subtitle">{content.contact.subtitle}</p>
+        <h2 className="section-title">Contact Us to Get Started</h2>
+        <p className="contact-subtitle">Ready to elevate your brand? Get in touch with us today.</p>
         
         <div className="contact-content">
           <div className="contact-info">
             <div className="contact-item">
               <h3>Phone</h3>
-              <a href={`tel:${content.company.phone}`} className="contact-link">
-                {content.company.phone}
+              <a href="tel:+919940711173" className="contact-link">
+                +91 99407 11173
               </a>
             </div>
             
             <div className="contact-item">
               <h3>Email</h3>
-              <a href={`mailto:${content.company.email}`} className="contact-link">
-                {content.company.email}
+              <a href="mailto:rcvijay@yahoo.co.in" className="contact-link">
+                rcvijay@yahoo.co.in
               </a>
             </div>
             
             <div className="contact-item">
               <h3>WhatsApp</h3>
-              <a href={content.company.whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <a href="https://wa.me/919940711173" target="_blank" rel="noopener noreferrer" className="btn btn-secondary whatsapp-btn">
+                <WhatsAppIcon size={20} className="whatsapp-icon" />
                 Message us on WhatsApp
               </a>
             </div>
             
             <div className="contact-item">
               <h3>Address</h3>
-              <p>{content.company.address}</p>
-              <p className="hours">{content.company.hours}</p>
-              <a href={content.contact.info.directionsLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+              <p>Srinivasa Ragavan Street, R.S. Puram, Coimbatore, Tamil Nadu, India</p>
+              <p className="hours">Open today: 06:00 am - 11:00 pm</p>
+              <a href="https://maps.google.com/?q=Srinivasa+Ragavan+Street+RS+Puram+Coimbatore" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                 Get Directions
               </a>
             </div>
@@ -65,35 +65,47 @@ const Contact = () => {
           
           <div className="contact-form-wrapper">
             <form onSubmit={handleSubmit} className="contact-form">
-              {content.contact.form.fields.map((field, index) => (
-                <div key={index} className="form-group">
-                  <label htmlFor={field.name}>{field.label}</label>
-                  {field.type === 'textarea' ? (
-                    <textarea
-                      id={field.name}
-                      name={field.name}
-                      value={formData[field.name]}
-                      onChange={handleInputChange}
-                      required={field.required}
-                      rows="5"
-                      className="form-control"
-                    />
-                  ) : (
-                    <input
-                      type={field.type}
-                      id={field.name}
-                      name={field.name}
-                      value={formData[field.name]}
-                      onChange={handleInputChange}
-                      required={field.required}
-                      className="form-control"
-                    />
-                  )}
-                </div>
-              ))}
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  className="form-control"
+                />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="form-control"
+                />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
+                  rows="5"
+                  className="form-control"
+                />
+              </div>
               
               <button type="submit" className="btn btn-primary btn-full">
-                {content.contact.form.submitText}
+                Send Message
               </button>
             </form>
           </div>

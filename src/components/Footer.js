@@ -1,5 +1,4 @@
 import React from 'react';
-import content from '../content.json';
 
 const Footer = () => {
   return (
@@ -7,10 +6,10 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-left">
-            <p>{content.footer.copyright}</p>
+            <p>© 2025 C.V. Chandramouli — All Rights Reserved.</p>
           </div>
           <div className="footer-right">
-            <p>{content.footer.poweredBy}</p>
+            <p>Powered by cvchandramouli.com</p>
           </div>
         </div>
       </div>

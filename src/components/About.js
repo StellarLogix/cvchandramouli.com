@@ -1,14 +1,28 @@
 import React from 'react';
-import content from '../content.json';
 
 const About = () => {
+  const profiles = [
+    {
+      name: "C.V. Chandramouli",
+      title: "Founder",
+      description: "Founder and pioneer in cinema advertising.",
+      image: "/images/chandramouli.jpeg"
+    },
+    {
+      name: "R.C. Vijay",
+      title: "Director",
+      description: "MCA, MBA (Advertising). Certified in Technical Writing, Photoshop, and Digital Marketing.",
+      image: "/images/vijay.jpeg"
+    }
+  ];
+
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2 className="section-title">{content.about.title}</h2>
+        <h2 className="section-title">About Us</h2>
         
         <div className="profiles">
-          {content.about.profiles.map((profile, index) => (
+          {profiles.map((profile, index) => (
             <div key={index} className="profile-card">
               <div className="profile-image">
                 <img
