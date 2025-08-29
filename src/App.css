@@ -104,14 +104,15 @@ h6 {
 
 .btn-outline {
   background-color: transparent;
-  color: #cbb26a;
-  border: 2px solid #cbb26a;
+  color: #f39c12;
+  border: 2px solid #f39c12;
 }
 
 .btn-outline:hover {
-  background-color: #cbb26a;
+  background-color: #f39c12;
   color: white;
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
 }
 
 .btn-full {
