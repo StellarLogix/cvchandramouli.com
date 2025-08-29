@@ -1,10 +1,10 @@
 const Clients = () => {
   const clients = [
-    { name: "Client 1", image: "/images/client-1.jpeg" },
-    { name: "Client 2", image: "/images/client-2.jpeg" },
-    { name: "Client 3", image: "/images/client-3.jpeg" },
-    { name: "Client 4", image: "/images/client-4.jpeg" },
-    { name: "Client 5", image: "/images/client-5.jpeg" },
+    { name: "Client 1", image: "/images/client-1.png" },
+    { name: "Client 2", image: "/images/client-2.png" },
+    { name: "Client 3", image: "/images/client-3.png" },
+    { name: "Client 4", image: "/images/client-4.png" },
+    { name: "Client 5", image: "/images/client-5.png" },
   ];
 
   return (
