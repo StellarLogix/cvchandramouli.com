@@ -331,7 +331,7 @@ h6 {
 }
 
 .profile-name {
-  color: #cbb26a;
+  color: #f39c12;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -380,7 +380,7 @@ h6 {
 }
 
 .service-title {
-  color: #cbb26a;
+  color: #f39c12;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -413,7 +413,7 @@ h6 {
   text-align: center;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
-  border: 1px solid rgba(203, 178, 106, 0.08);
+  border: 1px solid rgba(243, 156, 18, 0.08);
 }
 
 .client-logo:hover {
@@ -510,7 +510,7 @@ h6 {
 }
 
 .contact-item h3 {
-  color: #cbb26a;
+  color: #f39c12;
   margin-bottom: 0.5rem;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -523,7 +523,7 @@ h6 {
 }
 
 .contact-link:hover {
-  color: #cbb26a;
+  color: #f39c12;
 }
 
 .hours {
@@ -553,8 +553,8 @@ h6 {
 
 .form-control:focus {
   outline: none;
-  border-color: #cbb26a;
-  box-shadow: 0 0 0 3px rgba(203, 178, 106, 0.1);
+  border-color: #f39c12;
+  box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.1);
 }
 
 .contact-form .form-group {
@@ -576,7 +576,7 @@ h6 {
   background-color: #1a1a1a;
   color: #e5e5e5;
   padding: 2rem 0;
-  border-top: 1px solid rgba(203, 178, 106, 0.2);
+  border-top: 1px solid rgba(243, 156, 18, 0.2);
 }
 
 .footer-content {
