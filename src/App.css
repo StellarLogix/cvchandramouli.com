@@ -156,10 +156,45 @@ h6 {
   color: #cbb26a;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
 .logo h2 {
   color: #cbb26a;
   margin: 0;
   font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 32px;
+  }
+
+  .logo h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    gap: 8px;
+  }
+
+  .logo-img {
+    height: 28px;
+  }
+
+  .logo h2 {
+    font-size: 1rem;
+  }
 }
 
 .nav {

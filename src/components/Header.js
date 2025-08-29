@@ -41,6 +41,11 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
+            <img
+              src={process.env.PUBLIC_URL + "/images/hero-image.svg"}
+              alt="C.V. Chandramouli"
+              className="logo-img"
+            />
             <h2>C.V. Chandramouli</h2>
           </div>
 
