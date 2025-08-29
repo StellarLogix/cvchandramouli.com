@@ -160,7 +160,8 @@ The site is fully responsive with breakpoints at:
 - `npm run dev` - Start development server
 - `npm start` - Start development server (alternative)
 - `npm run build` - Build for production
-- `npm run deploy` - Deploy to GitHub Pages
+- `npm run deploy:github` - Deploy to GitHub Pages with correct URL
+- `npm run deploy` - Deploy to GitHub Pages (requires homepage in package.json)
 - `npm test` - Run tests
 
 ## 🔗 Contact Integration
