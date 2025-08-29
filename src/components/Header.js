@@ -68,13 +68,6 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="btn btn-primary"
-              onClick={(e) => handleSmoothScroll(e, '#contact')}
-            >
-              Get Quote
-            </a>
           </nav>
 
           <a

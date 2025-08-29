@@ -328,7 +328,7 @@ h6 {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #cbb26a;
+  border: 4px solid #f39c12;
 }
 
 .profile-name {
@@ -431,7 +431,7 @@ h6 {
 /* Subscribe Section */
 .subscribe {
   padding: 80px 0;
-  background: linear-gradient(135deg, #cbb26a 0%, #b8a159 100%);
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
   color: white;
   position: relative;
 }
