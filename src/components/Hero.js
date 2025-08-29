@@ -1,5 +1,6 @@
 import React from 'react';
 import content from '../content.json';
+import { getImagePath } from '../utils/imagePath';
 
 const Hero = () => {
   const handleSmoothScroll = (e, href) => {
@@ -37,9 +38,9 @@ const Hero = () => {
           </div>
           
           <div className="hero-image">
-            <img 
-              src={content.hero.image} 
-              alt="C.V. Chandramouli Advertising" 
+            <img
+              src={getImagePath(content.hero.image)}
+              alt="C.V. Chandramouli Advertising"
               className="hero-img"
             />
           </div>
