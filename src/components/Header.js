@@ -46,7 +46,7 @@ const Header = () => {
               alt="C.V. Chandramouli"
               className="logo-img"
             />
-            <h2>C.V. Chandramouli</h2>
+            <h2>CV Chandramouli Advertising</h2>
           </div>
 
           <button
