@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
 # C.V. Chandramouli - Advertising Consultants
 
 A professional single-page landing site for C.V. Chandramouli advertising agency, built with React and optimized for GitHub Pages deployment.
@@ -62,8 +65,8 @@ All website content is stored in `src/content.json`. Simply edit this file to up
 ```json
 {
   "company": {
-    "phone": "+91 99407 11173",  // Update this number
-    "email": "rcvijay@yahoo.co.in",
+    "phone": "+91 99407 11173", // Update this number
+    "email": "rcvijay@yahoo.co.in"
     // ... other fields
   }
 }
@@ -80,7 +83,7 @@ All website content is stored in `src/content.json`. Simply edit this file to up
         "description": "Creating impactful print campaigns..."
       },
       {
-        "title": "Your New Service",  // Add new service here
+        "title": "Your New Service", // Add new service here
         "description": "Description of your new service..."
       }
     ]
@@ -103,6 +106,7 @@ Replace the placeholder images in `public/images/` with your actual images:
 ### First-time Setup
 
 1. **Update package.json**: Replace the homepage URL with your repository:
+
    ```json
    "homepage": "https://yourusername.github.io/your-repository-name"
    ```
@@ -115,6 +119,7 @@ Replace the placeholder images in `public/images/` with your actual images:
 ### Deploy Steps
 
 1. **Build and Deploy**:
+
    ```bash
    npm run deploy
    ```
@@ -128,6 +133,7 @@ Replace the placeholder images in `public/images/` with your actual images:
 ### Automatic Deployment
 
 Every time you run `npm run deploy`, it will:
+
 1. Build the production version
 2. Push the build to the `gh-pages` branch
 3. Update your live site
@@ -143,6 +149,7 @@ The accent color (muted gold) is defined as `#CBB26A` throughout the CSS. To cha
 ## 📱 Responsive Design
 
 The site is fully responsive with breakpoints at:
+
 - Mobile: 480px and below
 - Tablet: 768px and below
 - Desktop: Above 768px
@@ -166,12 +173,14 @@ The site is fully responsive with breakpoints at:
 ## 🔗 Contact Integration
 
 The site includes working links for:
+
 - **Phone**: Click-to-call functionality
 - **Email**: Opens default email client
 - **WhatsApp**: Direct message link
 - **Google Maps**: Directions to office
 
 Forms are set up with placeholder endpoints. To connect real form submission:
+
 1. Update `content.json` → `contact.form.action` with your form handler URL
 2. Update `content.json` → `subscribe.endpoint` with your newsletter service URL
 
@@ -183,6 +192,7 @@ For technical issues or customization help, contact the development team or refe
 
 **Website**: cvchandramouli.com  
 **Built with**: React + GitHub Pages
+<<<<<<< HEAD
 =======
 # cvchandramouli.com
 
@@ -191,4 +201,6 @@ This repository was initialized by Builder.io.
 ## Getting Started
 
 Welcome to your new repository! You can now start building your project.
+>>>>>>> refs/remotes/origin/main
+=======
 >>>>>>> refs/remotes/origin/main
