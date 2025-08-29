@@ -131,18 +131,21 @@ h6 {
 
 /* Header */
 .header {
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(203, 178, 106, 0.1);
 }
 
 .header-sticky {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.98);
 }
 
 .header-content {
@@ -278,7 +281,7 @@ h6 {
 /* About Section */
 .about {
   padding: 80px 0;
-  background-color: #f8f9fa;
+  background-color: #fafbfc;
 }
 
 .profiles {
@@ -292,14 +295,16 @@ h6 {
 .profile-card {
   background: white;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(203, 178, 106, 0.1);
 }
 
 .profile-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
 }
 
 .profile-image {
@@ -351,14 +356,16 @@ h6 {
 .service-card {
   background: white;
   padding: 2.5rem;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(203, 178, 106, 0.1);
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
 }
 
 .service-title {
@@ -378,7 +385,7 @@ h6 {
 /* Clients Section */
 .clients {
   padding: 80px 0;
-  background-color: #f8f9fa;
+  background-color: #fafbfc;
 }
 
 .clients-grid {
@@ -391,14 +398,16 @@ h6 {
 .client-logo {
   background: white;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(203, 178, 106, 0.08);
 }
 
 .client-logo:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .client-img {
@@ -412,6 +421,17 @@ h6 {
   padding: 80px 0;
   background: linear-gradient(135deg, #cbb26a 0%, #b8a159 100%);
   color: white;
+  position: relative;
+}
+
+.subscribe::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(203, 178, 106, 0.9) 0%, rgba(184, 161, 89, 0.9) 100%);
 }
 
 .subscribe-content {
@@ -502,23 +522,28 @@ h6 {
 }
 
 .contact-form {
-  background: #f8f9fa;
+  background: #fafbfc;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(203, 178, 106, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
 }
 
 .form-control {
   width: 100%;
-  padding: 12px 16px;
-  border: 2px solid #e9ecef;
-  border-radius: 5px;
+  padding: 14px 16px;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
+  background: white;
+  font-weight: 400;
 }
 
 .form-control:focus {
   outline: none;
   border-color: #cbb26a;
+  box-shadow: 0 0 0 3px rgba(203, 178, 106, 0.1);
 }
 
 .contact-form .form-group {
@@ -537,9 +562,10 @@ h6 {
 
 /* Footer */
 .footer {
-  background-color: #2c2c2c;
-  color: white;
+  background-color: #1a1a1a;
+  color: #e5e5e5;
   padding: 2rem 0;
+  border-top: 1px solid rgba(203, 178, 106, 0.2);
 }
 
 .footer-content {
