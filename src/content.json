@@ -6,7 +6,7 @@
     "phone": "+91 99407 11173",
     "email": "rcvijay@yahoo.co.in",
     "address": "Srinivasa Ragavan Street, R.S. Puram, Coimbatore, Tamil Nadu, India",
-    "hours": "Open today: 06:00 am – 11:00 pm",
+    "hours": "Open today: 06:00 am - 11:00 pm",
     "whatsappLink": "https://wa.me/919940711173"
   },
   "navigation": [
@@ -21,7 +21,11 @@
     "image": "/images/hero-image.svg",
     "buttons": [
       { "text": "Get Quote", "href": "#contact", "type": "primary" },
-      { "text": "WhatsApp", "href": "https://wa.me/919940711173", "type": "secondary" }
+      {
+        "text": "WhatsApp",
+        "href": "https://wa.me/919940711173",
+        "type": "secondary"
+      }
     ]
   },
   "about": {
@@ -81,8 +85,18 @@
       "action": "https://example.com/contact",
       "fields": [
         { "name": "name", "label": "Name", "type": "text", "required": true },
-        { "name": "email", "label": "Email", "type": "email", "required": true },
-        { "name": "message", "label": "Message", "type": "textarea", "required": true }
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "required": true
+        }
       ],
       "submitText": "Send Message"
     },
