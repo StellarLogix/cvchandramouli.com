@@ -1,5 +1,6 @@
 import React from 'react';
 import content from '../content.json';
+import { getImagePath } from '../utils/imagePath';
 
 const About = () => {
   return (
@@ -11,9 +12,9 @@ const About = () => {
           {content.about.profiles.map((profile, index) => (
             <div key={index} className="profile-card">
               <div className="profile-image">
-                <img 
-                  src={profile.image} 
-                  alt={profile.name} 
+                <img
+                  src={getImagePath(profile.image)}
+                  alt={profile.name}
                   className="profile-img"
                 />
               </div>

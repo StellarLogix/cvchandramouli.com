@@ -1,5 +1,6 @@
 import React from 'react';
 import content from '../content.json';
+import { getImagePath } from '../utils/imagePath';
 
 const Clients = () => {
   return (
@@ -10,9 +11,9 @@ const Clients = () => {
         <div className="clients-grid">
           {content.clients.logos.map((client, index) => (
             <div key={index} className="client-logo">
-              <img 
-                src={client.image} 
-                alt={client.name} 
+              <img
+                src={getImagePath(client.image)}
+                alt={client.name}
                 className="client-img"
               />
             </div>
