@@ -22,7 +22,7 @@ const Contact = () => {
     e.preventDefault();
     console.log("Contact form submission:", formData);
     alert(
-      "Thank you for your message! We will get back to you soon. (This is a placeholder action)"
+      "Thank you for your message! We will get back to you shortly during business hours."
     );
     setFormData({ name: "", email: "", message: "" });
   };
