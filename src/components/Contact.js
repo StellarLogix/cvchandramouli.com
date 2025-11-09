@@ -1,30 +1,47 @@
 import { useState } from "react";
+import CheckIcon from "./CheckIcon";
 import MapIcon from "./MapIcon";
 import SendIcon from "./SendIcon";
 import WhatsAppIcon from "./WhatsAppIcon";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/rcvijay@yahoo.co.in",
+        {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
+
+      if (response.ok) {
+        setShowModal(true);
+        e.target.reset();
+      } else {
+        alert("Something went wrong. Please try again or contact us directly.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Something went wrong. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Contact form submission:", formData);
-    alert(
-      "Thank you for your message! We will get back to you shortly during business hours."
-    );
-    setFormData({ name: "", email: "", message: "" });
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -91,8 +108,6 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
                   required
                   className="form-control"
                 />
@@ -104,8 +119,6 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
                   required
                   className="form-control"
                 />
@@ -116,22 +129,51 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
                   required
                   rows="5"
                   className="form-control"
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary btn-full">
+              <button
+                type="submit"
+                className="btn btn-primary btn-full"
+                disabled={isSubmitting}
+              >
                 <SendIcon size={20} />
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
         </div>
       </div>
+
+      {/* Success Modal */}
+      {showModal && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h3>Thank You for Contacting Us!</h3>
+            </div>
+            <div className="modal-body">
+              <p>
+                We appreciate you reaching out to us. Our team will review your
+                message and get back to you as soon as possible during business
+                hours.
+              </p>
+              <p className="modal-note">
+                Typical response time: Within 24 hours
+              </p>
+            </div>
+            <div className="modal-footer">
+              <button className="btn btn-primary" onClick={closeModal}>
+                <CheckIcon size={20} />
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
